@@ -1,0 +1,28 @@
+﻿<Window x:Class="EmployeeGUIWPF.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmployeeGUIWPF"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="SearchButton" Content="Søg" HorizontalAlignment="Left" Height="28" Margin="89,71,0,0" VerticalAlignment="Top" Width="66" Click="SearchButton_Click"/>
+        <Label Content="Id:" HorizontalAlignment="Left" Height="28" Margin="175,71,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="SearchId" HorizontalAlignment="Left" Height="28" Margin="200,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="Navn" HorizontalAlignment="Left" Height="42" Margin="90,117,0,0" VerticalAlignment="Top" Width="150">
+
+        </Label>
+        <Label x:Name="YearsEmployed" Content="" HorizontalAlignment="Left" Height="47" Margin="300,117,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Height="28" Margin="532,68,0,0" VerticalAlignment="Top" Width="81" Click="Add_Click"/>
+        <TextBox x:Name="NameToChangeOrAdd" HorizontalAlignment="Left" Height="28" Margin="555,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+        <TextBox x:Name="Years" HorizontalAlignment="Left" Height="28" Margin="556,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <Button x:Name="Edit" Content="Edit" HorizontalAlignment="Left" Height="28" Margin="667,68,0,0" VerticalAlignment="Top" Width="76" Click="Edit_Click"/>
+        <ListBox x:Name="EmpList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="90,179,425,40"/>
+        <Button x:Name="VisEmp" Content="Vis Employees" HorizontalAlignment="Left" Height="28" Margin="435,329,0,0" VerticalAlignment="Top" Click="VisEmployees"/>
+        <Button x:Name="VisSelect" Content="VisSelected" HorizontalAlignment="Left" Margin="470,154,0,0" VerticalAlignment="Top" Click="VisSelect_Click"/>
+        <TextBox x:Name="SQLID" HorizontalAlignment="Left" Margin="555,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Height="28"/>
+
+
+    </Grid>
+</Window>
